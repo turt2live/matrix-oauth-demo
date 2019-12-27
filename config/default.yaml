@@ -1,0 +1,21 @@
+# The port and address to listen for web requests on. Serves the frontend as well as the API.
+listenPort: 8080
+listenAddress: '0.0.0.0'
+
+# Where the HTML templates are located (using LiquidJS)
+# Typically this is left unchanged.
+templateDirectory: './templates'
+
+# Where to serve static files (like CSS, JS, etc) from
+# Typically this is left unchanged.
+assetsDirectory: './public'
+
+# Define this client in your matrix-oauth config. Be sure to point the
+# redirect URI to this demo server, using the /oauth/done path.
+clientId: your_client_id
+clientSecret: your_client_secret
+redirectUri: "https://example.org/oauth/done"
+
+# Point this at your matrix-oauth server
+authorizationUrl: "https://oauth.t2host.io/oauth/authorize"
+tokenUrl: "https://oauth.t2host.io/oauth/token"
